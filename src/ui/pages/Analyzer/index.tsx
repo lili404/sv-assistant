@@ -13,7 +13,7 @@ const HomePage: React.FC = () =>
         Duis vel fringilla mi. Sed pellentesque fringilla dui. Integer nec molestie purus, eu posuere eros. Sed efficitur arcu eget tempus fringilla. Maecenas sit amet orci bibendum est ornare semper. Nulla facilisis, est in aliquam lacinia, purus neque luctus felis, in vulputate tellus libero in neque. Pellentesque pellentesque interdum nibh gravida lobortis. In hac habitasse platea dictumst. In hac habitasse platea dictumst. In et consectetur ipsum.
       </p><p>
         Etiam tristique nulla sit amet justo faucibus condimentum. Pellentesque ac purus aliquet, efficitur mi sit amet, convallis diam. Curabitur facilisis dignissim elit, vel feugiat leo scelerisque eget. Integer nec augue tellus. Vivamus sed ipsum ut ex tincidunt accumsan. Ut quis consectetur tellus, vitae tempus turpis. Pellentesque non ipsum non ligula congue tempor. Integer egestas ultricies orci id mollis. In mattis erat a interdum eleifend. Etiam sit amet sagittis massa, ac porta purus. In hac habitasse platea dictumst. In et tortor accumsan nibh porta efficitur ac eu sem.</p>
-      <p>i love amongus</p>
+      <p>i love amonguss</p>
     
     </div>
   </Wrapper >
