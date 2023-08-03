@@ -1,0 +1,147 @@
+@import url('/src/fonts/fonts.scss');
+
+* {
+  box-sizing: border-box;
+
+}
+
+// *[class] {
+//   outline: 0.5px solid red;
+// }
+
+.placeholder {
+  width: 110px;
+  height: 100vh;
+  background-color: #c2b4b4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(12, 12, 12, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarBody {
+  width: 110px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #090909;
+  border-right: 3px solid #0F0F0F;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.navbar .links {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.navbar .category {
+  margin-bottom: 24px;
+  cursor: pointer
+}
+
+.navbar .category:hover {
+  margin-bottom: 24px;
+  background-color: #0f0f0f;
+}
+
+.categoryLogo {
+  width: 220px;
+  margin: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logoContainer {
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(135deg, rgba(214, 151, 253, 1) 0%, rgba(149, 114, 224, 1) 100%);
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.logoIcon {
+  width: 42px;
+  height: 42px;
+  background-image: url('../assets/prismatic-shard.png');
+  background-size: 42px 42px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.labelContainer {
+  white-space: nowrap;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gameTitle {
+  font-size: 17.6px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: white;
+}
+
+.appTitle {
+  font-size: 23px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #AE90EE;
+}
+
+.categorySection {
+  width: 100%;
+  height: 60px;
+  text-align: left;
+  display: flex;
+  position: relative;
+  padding: 20px 40px;
+}
+
+.icon {
+  margin-right: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  width: 100%;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.links a:link,
+a:visited,
+a:active {
+  color: rgb(210, 210, 210);
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+.category:last-child {
+  margin-top: auto;
+}

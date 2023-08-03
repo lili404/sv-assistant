@@ -1,0 +1,19 @@
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  background-color: #090909;
+  color: white;
+}
+
+i {
+  text-align: center;
+}
+
+h1{
+  color: #AE90EE;
+}
