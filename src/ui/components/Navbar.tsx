@@ -5,6 +5,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
+
 import { Link } from 'react-router-dom';
 
 interface SidebarLink {
@@ -51,7 +52,7 @@ const NavBar: React.FC = () => {
 
   return (
     <div className={styles.navbar}>
-        {isExpanded && <div className={styles.overlay} />}
+        {isExpanded && <div className={`${styles.overlay} ${isExpanded ? styles.fadeIn : styles.fadeOut}`}/>}
       <div className={styles.placeholder}></div>
       <div
         ref={navbarRef}
