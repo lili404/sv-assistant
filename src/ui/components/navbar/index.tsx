@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import styles from './navbar.module.scss';
 
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
+import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 
 
@@ -16,14 +16,14 @@ interface SidebarLink {
 
 const links: SidebarLink[] = [
   {
-    label: 'Search',
-    url: 'search',
-    icon: <SearchOutlinedIcon style={{ fontSize: '30px', fill: '#AE90EE' }} />
-  },
-  {
     label: 'Analyzer',
     url: 'analyzer',
     icon: <TimelineOutlinedIcon style={{ fontSize: '30px', fill: '#AE90EE' }} />
+  },
+  {
+    label: 'Wiki',
+    url: 'wiki',
+    icon: <ClassOutlinedIcon style={{ fontSize: '30px', fill: '#AE90EE' }} />
   },
   {
     label: 'Settings',
