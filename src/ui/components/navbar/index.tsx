@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react'
-import styles from './styles.module.scss'
+import React, { useRef } from 'react';
+import styles from './navbar.module.scss';
 
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
@@ -33,26 +33,23 @@ const links: SidebarLink[] = [
 ];
 
 const NavBar: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const navbarRef = useRef<HTMLDivElement | null>(null);
 
   const handleMouseEnter = () => {
     if (navbarRef.current) {
-      navbarRef.current.style.width = `${navbarRef.current?.scrollWidth}px`
-      setIsExpanded(true)
+      navbarRef.current.style.width = `${navbarRef.current?.scrollWidth}px`;
     }
   };
 
   const handleMouseLeave = () => {
     if (navbarRef.current) {
-      navbarRef.current.style.width = `110px`
-      setIsExpanded(false)
+      navbarRef.current.style.width = `110px`;
     }
   };
 
   return (
     <div className={styles.navbar}>
-        {isExpanded && <div className={`${styles.overlay} ${isExpanded ? styles.fadeIn : styles.fadeOut}`}/>}
+      <div className={styles.overlay}></div>
       <div className={styles.placeholder}></div>
       <div
         ref={navbarRef}

@@ -4,8 +4,8 @@ import {
   BrowserRouter,
 } from 'react-router-dom';
 
-import HomePage from '../pages/Analyzer';
-import ErrorPage from '../pages/error/error-page';
+import HomePage from '../../pages/analyzer/index';
+import ErrorPage from '../../pages/error/index';
 
 const router = createBrowserRouter([
   {
